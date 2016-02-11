@@ -152,7 +152,7 @@ public class StudentTab extends JPanel {
         SpringLayout springLayout1 = new SpringLayout();
         springLayout1.putConstraint(SpringLayout.EAST, surnameFilterLabel, -15, SpringLayout.WEST, filterOfSurnamesInTable);
         springLayout1.putConstraint(SpringLayout.NORTH, surnameFilterLabel, 15, SpringLayout.NORTH, surnameFilterPanel);
-        springLayout1.putConstraint(SpringLayout.WEST, filterOfSurnamesInTable, 225, SpringLayout.WEST, surnameFilterPanel);
+        springLayout1.putConstraint(SpringLayout.WEST, filterOfSurnamesInTable, 255, SpringLayout.WEST, surnameFilterPanel);
         springLayout1.putConstraint(SpringLayout.NORTH, filterOfSurnamesInTable, 15, SpringLayout.NORTH, surnameFilterPanel);
         surnameFilterPanel.setLayout(springLayout1);
 
@@ -182,7 +182,7 @@ public class StudentTab extends JPanel {
         SpringLayout springLayout2 = new SpringLayout();
         springLayout2.putConstraint(SpringLayout.EAST, groupsFilterLabel, -15, SpringLayout.WEST, filterOfGroupsInTable);
         springLayout2.putConstraint(SpringLayout.NORTH, groupsFilterLabel, 5, SpringLayout.NORTH, groupsFilterPanel);
-        springLayout2.putConstraint(SpringLayout.WEST, filterOfGroupsInTable, 225, SpringLayout.WEST, groupsFilterPanel);
+        springLayout2.putConstraint(SpringLayout.WEST, filterOfGroupsInTable, 255, SpringLayout.WEST, groupsFilterPanel);
         springLayout2.putConstraint(SpringLayout.NORTH, filterOfGroupsInTable, 5, SpringLayout.NORTH, groupsFilterPanel);
         groupsFilterPanel.setLayout(springLayout2);
 
