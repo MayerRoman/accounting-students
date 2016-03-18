@@ -46,13 +46,13 @@ public class HSqlDAOFactory implements DAOFactory {
                 InputStreamReader inputStreamReader=new InputStreamReader(inputStream);
                 BufferedReader reader=new BufferedReader(inputStreamReader);
 
-                String sql = "";
+                StringBuilder sql = new StringBuilder();
                 while (reader.ready()) {
-                    sql += reader.readLine();
+                    sql.append(reader.readLine());
                 }
 
                 Statement statement = connection.createStatement();
-                statement.executeUpdate(sql);
+                statement.executeUpdate(sql.toString());
             } catch (IOException e) {
                 new DataBaseInitializingExceptionDialog(e);
             }
